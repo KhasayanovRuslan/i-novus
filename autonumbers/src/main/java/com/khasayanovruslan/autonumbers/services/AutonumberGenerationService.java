@@ -90,6 +90,7 @@ public class AutonumberGenerationService {
 
             if(!File.findAutonumber(autonumber.toString())){
                 File.appendAutonumber("autonumbers.txt", autonumber);
+                flag = false;
             }
 
         }
